@@ -1,4 +1,5 @@
 <?php
+
 $htmlfiles = glob("../../*.html");
 
 $response = [];
