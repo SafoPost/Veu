@@ -2,10 +2,11 @@
 
 $_POST = json_decode(file_get_contents('php://input'), true);
 
-$newFile = "../../temp_file_987697hjg77.html";
+$page = $_POST["page"];
+$file = $_POST["file"];
 
-if ($_POST["html"]) {
-  file_put_contents($newFile, $_POST["html"]);
+if ($page && $file) {
+  copy("../backups/" . $file, "../../" . $page);
 } else {
   header("HTTP/1.0 400 Bad Request");
 }
