@@ -16,7 +16,7 @@ if ($newHtml && $file) {
   array_push($backups, ["page" => $file, "file" => $backupFileName, "time" => date("h:i:s d.m.y")]);
   file_put_contents("../backups/backups.json", json_encode($backups));
 
-  file_put_contents($file, $newHtml);
+  file_put_contents("../../" . $file, $newHtml);
 } else {
   header("HTTP/1.0 400 Bad Request");
 }
