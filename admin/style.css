@@ -10065,7 +10065,7 @@ iframe {
   padding: 12px;
   height: 64px;
   box-sizing: border-box;
-  border-bottom: 3px double #1e87f0; }
+  border-bottom: 3px double #6DA839; }
   .panel .btn-down {
     margin-left: -4px;
     padding: 0 15px; }
@@ -10101,9 +10101,16 @@ iframe {
   .uk-button-default {
     border: 1px solid #1e87f0; }
     .uk-button-default:hover {
-      border: 1px solid #1e87f0; }
+      border: 1px solid #A8396D; }
     .uk-button-default:focus {
-      background-color: rgba(30, 135, 240, 0.3); }
+      background-color: rgba(168, 57, 109, 0.3);
+      border: none; }
+  .uk-button-primary:hover {
+    border: 1px solid #A8396D;
+    background-color: #A8396D; }
+  .uk-button-primary:focus {
+    background-color: rgba(168, 57, 109, 0.3);
+    border: none; }
 
 a.uk-link-muted:hover {
   color: #1e87f0; }
